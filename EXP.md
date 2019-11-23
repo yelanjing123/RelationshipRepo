@@ -2,6 +2,24 @@
 
 
 
+## 开发技巧
+
+#### 窗体间信息交换
+
+实现窗体间的信息交换：接受子窗体的值来判断是否在父窗体中做相应操作
+
+> //通过是否按下删除档案按钮，判断是否需要删除其档案
+>
+> DialogResult isDelete = frmchild.ShowDialog();
+> if(isDelete == DialogResult.OK)
+>  {   ……  }
+
+[相关CSDN教程](https://blog.csdn.net/rockytech/article/details/21474007)
+
+[相关cnblogs教程](https://www.cnblogs.com/gavin-king/p/4167856.html)
+
+
+
 ## 数据库
 
 - 需要在启动项目的app.config中，复制数据库字符串连接字段
