@@ -56,14 +56,14 @@ namespace Mysociogram
         {
             try
             {
+                
                 PersonRepository repo = new PersonRepository();
                 if (_person != null)
                 {
                     repo.Delete(_person.PersonId);
                 }
+                //删除后关闭本窗体
                 this.Close();
-
-                //删除之后原绑定控件DataGridView不能更新
             }
             catch (Exception ex)
             {

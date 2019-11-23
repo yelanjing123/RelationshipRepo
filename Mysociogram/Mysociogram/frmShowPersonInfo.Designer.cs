@@ -195,6 +195,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnDelete.FlatAppearance.BorderSize = 2;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));

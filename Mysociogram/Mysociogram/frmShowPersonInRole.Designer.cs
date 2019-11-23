@@ -35,6 +35,13 @@
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
             this.dataGridViewPerson = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn = new System.Windows.Forms.Button();
             this.txtUserInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,13 +50,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.bindingSourcePersons = new System.Windows.Forms.BindingSource(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPerson)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourcePersons)).BeginInit();
@@ -142,6 +142,56 @@
             this.dataGridViewPerson.RowTemplate.Height = 23;
             this.dataGridViewPerson.Size = new System.Drawing.Size(1051, 425);
             this.dataGridViewPerson.TabIndex = 53;
+            
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "PersonId";
+            this.Column1.HeaderText = "序号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Name";
+            this.Column2.HeaderText = "姓名";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Gender";
+            this.Column4.HeaderText = "性别";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Birthday";
+            this.Column3.HeaderText = "生日";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "PhoneNumber";
+            this.Column5.HeaderText = "手机号";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "AcquaintanceDay";
+            this.Column6.HeaderText = "相识日期";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "Photo";
+            this.Column7.HeaderText = "地址";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // btn
             // 
@@ -227,55 +277,6 @@
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(55, 20);
             this.lblInfo.Text = "lblInfo";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "PersonId";
-            this.Column1.HeaderText = "序号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Name";
-            this.Column2.HeaderText = "姓名";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Gender";
-            this.Column4.HeaderText = "性别";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Birthday";
-            this.Column3.HeaderText = "生日";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "PhoneNumber";
-            this.Column5.HeaderText = "手机号";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "AcquaintanceDay";
-            this.Column6.HeaderText = "相识日期";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "Photo";
-            this.Column7.HeaderText = "地址";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
             // 
             // frmShowPersonInRole
             // 

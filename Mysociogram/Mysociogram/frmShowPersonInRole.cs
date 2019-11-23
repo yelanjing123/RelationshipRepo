@@ -34,6 +34,11 @@ namespace Mysociogram
 
         private PersonRepository repo = null;
         private BindingList<Person> Persons = null;
+        //private int isDelete = 0;
+        //public int IsDelete
+        //{
+        //    set { IsDelete = value; }
+        //}
 
 
         /// <summary>
@@ -59,12 +64,12 @@ namespace Mysociogram
                 dataGridViewPerson.DataSource = bindingSourcePersons;
 
                 lblInfo.Text = string.Format("装入记录{0}条", Persons.Count);
-        }
+            }
             catch (Exception ex)
             {
                 lblInfo.Text = ex.Message;
             }
-}
+        }
 
         #region 挂接到BindList的事件代码
         private void bindingSourcePersons_CurrentChanged(object sender, EventArgs e)
@@ -208,10 +213,28 @@ namespace Mysociogram
                 if (person != null)
                 {
                     //显示分类展示他人信息界面
-                    frmShowPersonInfo frm = new frmShowPersonInfo(person);
-                    frm.Show();                    
+                    frmShowPersonInfo frmchild = new frmShowPersonInfo(person);
+                    //frmchild.Show();
+
+                    //通过是否按下删除档案按钮，判断是否需要删除其档案
+                    DialogResult isDelete = frmchild.ShowDialog();
+                    if(isDelete == DialogResult.OK)
+                    {   
+                        //不知道是不是可以通过DataGirdView相应属性或空间实现
+                        //测试过 ，只更新Persons值，不重新设置绑定无法刷新显示
+
+                        //为解决DataGridView刷新问题，重新获取Persons值
+                        repo = new PersonRepository();
+                        //从数据库中提取数据，放到BindingList<T>集合中
+                        Persons = repo.GetAllPersons();
+                        ////将其关联上BindingSource组件
+                        bindingSourcePersons.DataSource = Persons;
+                        //设定DataGridView的数据源引用BindingSource
+                        dataGridViewPerson.DataSource = bindingSourcePersons;
+                    }
+
                 }
-                
+              
             }
             catch (Exception ex)
             {
@@ -222,8 +245,8 @@ namespace Mysociogram
         }
         #endregion
 
-
-
-
+        
+        
+        
     }
 }
