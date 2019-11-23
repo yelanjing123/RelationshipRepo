@@ -1,0 +1,12 @@
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\EntityFramework.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\EntityFramework.xml
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

@@ -1,0 +1,6 @@
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\bin\Debug\Modle.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\bin\Debug\Modle.pdb
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Modle.dll
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Modle.pdb
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Model.csprojAssemblyReference.cache

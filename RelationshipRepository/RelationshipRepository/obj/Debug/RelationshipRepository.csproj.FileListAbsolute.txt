@@ -1,0 +1,10 @@
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\bin\Debug\RelationshipRepository.exe.config
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\bin\Debug\RelationshipRepository.exe
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\bin\Debug\RelationshipRepository.pdb
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.csprojAssemblyReference.cache
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.frmShow.resources
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.Properties.Resources.resources
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.csproj.GenerateResource.cache
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.csproj.CoreCompileInputs.cache
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.exe
+F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\RelationshipRepository\obj\Debug\RelationshipRepository.pdb

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationshipRepository", "RelationshipRepository\RelationshipRepository.csproj", "{7214BB53-945A-4F1A-A319-4DCAC3BAB577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{C09C0D9E-ED78-4D26-9350-036F40EED82D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Modle\Model.csproj", "{B9682F38-3CE5-4701-AAFE-DA76832BC57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mysociogram", "..\Mysociogram\Mysociogram\Mysociogram.csproj", "{C520CC12-9D66-48DD-8136-CA13B16E0A25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7214BB53-945A-4F1A-A319-4DCAC3BAB577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7214BB53-945A-4F1A-A319-4DCAC3BAB577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7214BB53-945A-4F1A-A319-4DCAC3BAB577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7214BB53-945A-4F1A-A319-4DCAC3BAB577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09C0D9E-ED78-4D26-9350-036F40EED82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09C0D9E-ED78-4D26-9350-036F40EED82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09C0D9E-ED78-4D26-9350-036F40EED82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09C0D9E-ED78-4D26-9350-036F40EED82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9682F38-3CE5-4701-AAFE-DA76832BC57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9682F38-3CE5-4701-AAFE-DA76832BC57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9682F38-3CE5-4701-AAFE-DA76832BC57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9682F38-3CE5-4701-AAFE-DA76832BC57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C520CC12-9D66-48DD-8136-CA13B16E0A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C520CC12-9D66-48DD-8136-CA13B16E0A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C520CC12-9D66-48DD-8136-CA13B16E0A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C520CC12-9D66-48DD-8136-CA13B16E0A25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AF35F4-5295-4C41-A6EE-C5EAB7678AC6}
+	EndGlobalSection
+EndGlobal
