@@ -25,6 +25,7 @@
 - 命令行输入命令出错时，可使用Ctrl+C退出该命令的输入
 - 进入vim编辑状态时，退出方法：一直按住esc ，再连续按大写的z两次
 - **push之前**记得使用**git status**查看是否还有未提交的修改
+- push的时候一直无法正常连接可以重新生成SHH Key并绑定：[相关CSDN教程](https://blog.csdn.net/u014702999/article/details/72783140)
 
 
 
