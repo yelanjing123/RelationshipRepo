@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="RelationshipDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActType" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ActTime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ActPlace" Type="nvarchar" MaxLength="20" />
+    <Property Name="ActDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="Image" Type="image" />
+    <Property Name="ActThought" Type="nvarchar" MaxLength="100" />
+  </EntityType>
   <EntityType Name="Person">
     <Key>
       <PropertyRef Name="PersonId" />
@@ -11,6 +23,14 @@
     <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
     <Property Name="AcquaintanceDay" Type="date" />
     <Property Name="Photo" Type="image" />
+  </EntityType>
+  <EntityType Name="PersonInAct">
+    <Key>
+      <PropertyRef Name="PersonId" />
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="PersonId" Type="int" Nullable="false" />
+    <Property Name="ActivityId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="PersonInRole">
     <Key>
@@ -27,6 +47,34 @@
     <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Role" Type="nvarchar" MaxLength="10" />
   </EntityType>
+  <Association Name="FK_PersonInAct_Activity">
+    <End Role="Activity" Type="Self.Activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PersonInAct" Type="Self.PersonInAct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="ActivityId" />
+      </Principal>
+      <Dependent Role="PersonInAct">
+        <PropertyRef Name="ActivityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonInAct_Person">
+    <End Role="Person" Type="Self.Person" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PersonInAct" Type="Self.PersonInAct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="PersonId" />
+      </Principal>
+      <Dependent Role="PersonInAct">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_PersonInRole_Person">
     <End Role="Person" Type="Self.Person" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -56,9 +104,19 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="RelationshipDBModelStoreContainer">
+    <EntitySet Name="Activity" EntityType="Self.Activity" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonInAct" EntityType="Self.PersonInAct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PersonInRole" EntityType="Self.PersonInRole" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PersonInAct_Activity" Association="Self.FK_PersonInAct_Activity">
+      <End Role="Activity" EntitySet="Activity" />
+      <End Role="PersonInAct" EntitySet="PersonInAct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonInAct_Person" Association="Self.FK_PersonInAct_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="PersonInAct" EntitySet="PersonInAct" />
+    </AssociationSet>
     <AssociationSet Name="FK_PersonInRole_Person" Association="Self.FK_PersonInRole_Person">
       <End Role="Person" EntitySet="Person" />
       <End Role="PersonInRole" EntitySet="PersonInRole" />

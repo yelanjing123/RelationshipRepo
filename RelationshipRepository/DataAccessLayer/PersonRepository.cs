@@ -48,10 +48,10 @@ namespace DataAccessLayer
         //按照PersonId,删除人员记录
         public int Delete(int PersonId)
         {
-            var member = context.People.Find(PersonId);
-            if (member != null)
+            var person = context.People.Find(PersonId);
+            if (person != null)
             {
-                context.People.Remove(member);
+                context.People.Remove(person);
             }
             return context.SaveChanges();
         }

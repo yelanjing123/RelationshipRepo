@@ -30,5 +30,11 @@ namespace Mysociogram
             frmShowPersonInRole frm = new frmShowPersonInRole();
             frm.Show();
         }
+
+        private void btnfrmAddorEditAct_Click(object sender, EventArgs e)
+        {
+            frmAddorEditAct frm = new frmAddorEditAct();
+            frm.Show();
+        }
     }
 }

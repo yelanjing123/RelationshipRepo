@@ -8,6 +8,8 @@
         <EntityTypeShape EntityType="RelationshipDBModel.Person" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="RelationshipDBModel.Role" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
         <AssociationConnector Association="RelationshipDBModel.PersonInRole" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="RelationshipDBModel.Activity" Width="1.5" PointX="4.5" PointY="3.75" />
+        <AssociationConnector Association="RelationshipDBModel.PersonInAct1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

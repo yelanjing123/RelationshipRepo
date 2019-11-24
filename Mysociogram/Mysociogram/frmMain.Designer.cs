@@ -32,6 +32,7 @@
             this.btnShowPersonInRole = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnfrmAddorEditAct = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMyPage
@@ -59,7 +60,7 @@
             this.btnShowPersonInRole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowPersonInRole.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnShowPersonInRole.ForeColor = System.Drawing.Color.White;
-            this.btnShowPersonInRole.Location = new System.Drawing.Point(523, 228);
+            this.btnShowPersonInRole.Location = new System.Drawing.Point(523, 290);
             this.btnShowPersonInRole.Margin = new System.Windows.Forms.Padding(4);
             this.btnShowPersonInRole.Name = "btnShowPersonInRole";
             this.btnShowPersonInRole.Size = new System.Drawing.Size(240, 62);
@@ -76,7 +77,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(523, 355);
+            this.button3.Location = new System.Drawing.Point(523, 386);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(240, 58);
@@ -97,6 +98,23 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mysiciogram";
             // 
+            // btnfrmAddorEditAct
+            // 
+            this.btnfrmAddorEditAct.BackColor = System.Drawing.Color.Transparent;
+            this.btnfrmAddorEditAct.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnfrmAddorEditAct.FlatAppearance.BorderSize = 5;
+            this.btnfrmAddorEditAct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnfrmAddorEditAct.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnfrmAddorEditAct.ForeColor = System.Drawing.Color.White;
+            this.btnfrmAddorEditAct.Location = new System.Drawing.Point(523, 200);
+            this.btnfrmAddorEditAct.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfrmAddorEditAct.Name = "btnfrmAddorEditAct";
+            this.btnfrmAddorEditAct.Size = new System.Drawing.Size(240, 62);
+            this.btnfrmAddorEditAct.TabIndex = 5;
+            this.btnfrmAddorEditAct.Text = "添加活动";
+            this.btnfrmAddorEditAct.UseVisualStyleBackColor = false;
+            this.btnfrmAddorEditAct.Click += new System.EventHandler(this.btnfrmAddorEditAct_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -105,6 +123,7 @@
             this.BackgroundImage = global::Mysociogram.Properties.Resources.beijing1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(875, 566);
+            this.Controls.Add(this.btnfrmAddorEditAct);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnShowPersonInRole);
@@ -122,5 +141,6 @@
         private System.Windows.Forms.Button btnShowPersonInRole;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnfrmAddorEditAct;
     }
 }

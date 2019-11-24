@@ -50,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity.cs">
+      <DependentUpon>RelationshipDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityRepository.cs" />
     <Compile Include="Person.cs">
       <DependentUpon>RelationshipDBModel.tt</DependentUpon>
     </Compile>

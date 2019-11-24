@@ -12,7 +12,7 @@ namespace DataAccessLayer
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-   
+
     
     public partial class RelationshipDBContext : DbContext
     {
@@ -28,5 +28,6 @@ namespace DataAccessLayer
     
         public virtual DbSet<Person> People { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Activity> Activities { get; set; }
     }
 }
