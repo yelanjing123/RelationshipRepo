@@ -12,6 +12,7 @@
     <Property Name="AcquaintanceDay" Type="DateTime" Precision="0" />
     <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
     <NavigationProperty Name="Roles" Relationship="Self.PersonInRole" FromRole="Person" ToRole="Role" />
+    <NavigationProperty Name="Activities" Relationship="RelationshipDBModel.PersonInAct1" FromRole="Person" ToRole="Activity" />
   </EntityType>
   <EntityType Name="Role">
     <Key>
@@ -32,5 +33,27 @@
       <End Role="Person" EntitySet="People" />
       <End Role="Role" EntitySet="Roles" />
     </AssociationSet>
+    <EntitySet Name="Activities" EntityType="RelationshipDBModel.Activity" />
+    <AssociationSet Name="PersonInAct1" Association="RelationshipDBModel.PersonInAct1">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="Person" EntitySet="People" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActType" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ActTime" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ActPlace" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ActDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ActThought" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="People" Relationship="RelationshipDBModel.PersonInAct1" FromRole="Activity" ToRole="Person" />
+  </EntityType>
+  <Association Name="PersonInAct1">
+    <End Type="RelationshipDBModel.Activity" Role="Activity" Multiplicity="*" />
+    <End Type="RelationshipDBModel.Person" Role="Person" Multiplicity="*" />
+  </Association>
 </Schema>

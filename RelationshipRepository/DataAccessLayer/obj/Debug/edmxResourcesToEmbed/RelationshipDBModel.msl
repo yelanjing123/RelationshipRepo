@@ -30,5 +30,26 @@
         <ScalarProperty Name="RoleId" ColumnName="RoleId" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="RelationshipDBModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="ActThought" ColumnName="ActThought" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ActDescription" ColumnName="ActDescription" />
+          <ScalarProperty Name="ActPlace" ColumnName="ActPlace" />
+          <ScalarProperty Name="ActTime" ColumnName="ActTime" />
+          <ScalarProperty Name="ActType" ColumnName="ActType" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PersonInAct1" TypeName="RelationshipDBModel.PersonInAct1" StoreEntitySet="PersonInAct">
+      <EndProperty Name="Person">
+        <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+      </EndProperty>
+      <EndProperty Name="Activity">
+        <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>
