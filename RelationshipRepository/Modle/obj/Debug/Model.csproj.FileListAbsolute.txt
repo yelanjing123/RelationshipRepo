@@ -4,3 +4,9 @@ F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\De
 F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Modle.dll
 F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Modle.pdb
 F:\陈茜\大三上\大型应用软件设计\RelationshipRepository\Modle\obj\Debug\Model.csprojAssemblyReference.cache
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\bin\Debug\Modle.dll
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\bin\Debug\Modle.pdb
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\obj\Debug\Modle.dll
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\obj\Debug\Modle.pdb
+E:\MyProject\RelationshipRepo\RelationshipRepository\Modle\obj\Debug\Model.csprojAssemblyReference.cache

@@ -60,3 +60,5 @@ E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.cspr
 E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.csproj.CopyComplete
 E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.exe
 E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.pdb
+E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.frmAddorEditAct.resources
+E:\MyProject\RelationshipRepo\Mysociogram\Mysociogram\obj\Debug\Mysociogram.frmShowAct.resources

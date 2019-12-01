@@ -27,7 +27,9 @@ namespace DataAccessLayer
                 PersonId = person.PersonId,
                 PhoneNumber = person.PhoneNumber,
                 AcquaintanceDay = person.AcquaintanceDay ,
-                Photo = person.Photo
+                Photo = person.Photo,
+                Roles = person.Roles,
+                Activities = person.Activities
             };
             return clone;
 
@@ -45,6 +47,8 @@ namespace DataAccessLayer
                 to.PhoneNumber = from.PhoneNumber;
                 to.AcquaintanceDay = from.AcquaintanceDay;
                 to.Photo = from.Photo;
+                to.Roles = from.Roles;
+                to.Activities = from.Activities;
             }
         }
     }

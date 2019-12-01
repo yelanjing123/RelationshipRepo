@@ -22,3 +22,4 @@ E:\MyProject\RelationshipRepo\RelationshipRepository\DataAccessLayer\bin\Debug\E
 E:\MyProject\RelationshipRepo\RelationshipRepository\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 E:\MyProject\RelationshipRepo\RelationshipRepository\DataAccessLayer\bin\Debug\zh-Hans\EntityFramework.resources.dll
 E:\MyProject\RelationshipRepo\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+E:\MyProject\RelationshipRepo\RelationshipRepository\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache

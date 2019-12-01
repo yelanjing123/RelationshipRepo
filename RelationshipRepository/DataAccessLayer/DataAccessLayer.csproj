@@ -53,6 +53,7 @@
     <Compile Include="Activity.cs">
       <DependentUpon>RelationshipDBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ActivityHelper.cs" />
     <Compile Include="ActivityRepository.cs" />
     <Compile Include="Person.cs">
       <DependentUpon>RelationshipDBModel.tt</DependentUpon>

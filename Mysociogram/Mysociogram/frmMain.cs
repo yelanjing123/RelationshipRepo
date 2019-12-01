@@ -36,5 +36,11 @@ namespace Mysociogram
             frmAddorEditAct frm = new frmAddorEditAct();
             frm.Show();
         }
+
+        private void btnfrmShowAct_Click(object sender, EventArgs e)
+        {
+            frmShowAct frm = new frmShowAct();
+            frm.Show();
+        }
     }
 }
